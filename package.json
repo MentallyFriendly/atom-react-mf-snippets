@@ -8,12 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/webbushka/atom-react-snippets.git"
+    "url": "https://github.com/MentallyFriendly/atom-react-mf-snippets"
   },
   "keywords": [
     "react",
     "react router",
-    "flux",
     "snippets",
     "es6"
   ],
@@ -22,9 +21,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/webbushka/atom-react-snippets/issues"
+    "url": "https://github.com/MentallyFriendly/atom-react-mf-snippets/issues"
   },
-  "homepage": "https://github.com/webbushka/atom-react-snippets",
+  "homepage": "https://github.com/MentallyFriendly/atom-react-mf-snippets",
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-lintspaces": "^0.3.0"
