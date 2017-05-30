@@ -1,6 +1,6 @@
 {
   "name": "atom-react-mf-snippets",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Atom Snippets for React and React Router",
   "scripts": {
     "test": "gulp"
