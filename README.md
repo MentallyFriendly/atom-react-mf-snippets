@@ -1,29 +1,26 @@
-Atom React.js Snippets [![Build Status](https://travis-ci.org/webbushka/atom-react-snippets.svg?branch=master)](https://travis-ci.org/webbushka/atom-react-snippets)
+Atom React.js Snippets
 ====================================================================================================================================================================
 
-An [Atom](https://atom.io/) snippet library for React, React Router and Flux. This library uses ES6 syntax, if you would prefer ES5 or Coffeescript snippets please use the [Atom React Package](https://atom.io/packages/react).
+An [Atom](https://atom.io/) snippet library for React. This library uses ES6 syntax.
 
 Install
 -------
 
-Go to `Packages > Settings View > Open` once in settings go to the Install tab and search for **react-snippets**
+Go to `Packages > Settings View > Open` once in settings go to the Install tab and search for **atom-react-mf-snippets**
 
 Restart Atom
 
 Documentation
 --------
-
--	[React Snippets](https://github.com/webbushka/atom-react-snippets/wiki/React-Snippets)
--	[React Router Snippets](https://github.com/webbushka/atom-react-snippets/wiki/Router-Snippets)
--	[Flux Snippets](https://github.com/webbushka/atom-react-snippets/wiki/Flux-Snippets)
+Documentation for snippets will be updated once they have been finalised
 
 Development
 -----------
 
 ```sh
 $ cd ~/.atom/packages
-$ git clone https://github.com/webbushka/atom-react-snippets.git
-$ cd atom-react-snippets
+$ git clone https://github.com/MentallyFriendly/atom-react-mf-snippets
+$ cd atom-react-mf-snippets
 $ apm install
 $ apm link
 ```
@@ -32,8 +29,7 @@ Features
 --------
 
 -	React Snippets
--	React Router Snippets - Needs update from v0.13 to v2.1
--	Flux Snippets
+-	React Router Snippets - (These are currently outdated and will be updated shortly)
 
 Contributing
 ------------
@@ -43,11 +39,6 @@ Contributing
 3.	Commit your changes: `git commit -m 'Add some feature'`
 4.	Push to the branch: `git push origin my-new-feature`
 5.	Submit a pull request
-
-Change Log
-----------
-
-[It's over here!](https://github.com/webbushka/atom-react-snippets/wiki/Changelog)
 
 License
 -------
