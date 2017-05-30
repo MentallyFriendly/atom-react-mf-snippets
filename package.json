@@ -1,8 +1,7 @@
 {
-  "name": "react-snippets",
-  "version": "0.1.0",
-  "description": "Atom Snippets for React, React Router and Flux",
-  "main": "./lib/react-snippets",
+  "name": "atom-react-mf-snippets",
+  "version": "0.0.0",
+  "description": "Atom Snippets for React and React Router",
   "scripts": {
     "test": "gulp"
   },
