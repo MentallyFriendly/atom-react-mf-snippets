@@ -18,7 +18,7 @@ Restart Atom
 ## Table of Snippets
 1. [Import](#import)
 
-## Import Snippets
+### Import
 **React: import empty**: `_i`
 ```javascript
 import ${1} from '${2}'
