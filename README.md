@@ -1,21 +1,50 @@
-Atom React.js Snippets
-====================================================================================================================================================================
+# Mentally Friendly React.js Snippets for Atom
 
-An [Atom](https://atom.io/) snippet library for React. This library uses ES6 syntax.
+* An [Atom](https://atom.io/) snippet library for React. Using ES6 syntax and promoting best practices for React development.
 
-Install
--------
+## Install
 
-Go to `Packages > Settings View > Open` once in settings go to the Install tab and search for **atom-react-mf-snippets**
+Go to `Packages > Settings View > Install Packages/Themes` and search for **atom-react-mf-snippets**
+
+Click Install
 
 Restart Atom
 
-Documentation
---------
-Documentation for snippets will be updated once they have been finalised
+## Features
 
-Development
------------
+-	React Snippets
+-	React Router Snippets - (These are currently outdated and will be updated shortly)
+
+## Table of Snippets
+1. [Import](#import)
+
+## Import Snippets
+**React: import empty**: `_i`
+```javascript
+import ${1} from '${2}'
+```
+
+**React: import**: `_ir`
+```javascript
+import React from 'react'
+```
+
+**React: import with Component**: `_irc`
+```javascript
+import React, { Component } from 'react'
+```
+
+**React: import PropTypes**: `_ip`
+```javascript
+import PropTypes from 'prop-types'
+```
+
+**React: import ReactDOM**: `_ird`
+```javascript
+import ReactDOM from 'react-dom'
+```
+
+# Development
 
 ```sh
 $ cd ~/.atom/packages
@@ -25,14 +54,7 @@ $ apm install
 $ apm link
 ```
 
-Features
---------
-
--	React Snippets
--	React Router Snippets - (These are currently outdated and will be updated shortly)
-
-Contributing
-------------
+# Contributing
 
 1.	Fork it!
 2.	Create your feature branch: `git checkout -b my-new-feature`
@@ -40,12 +62,10 @@ Contributing
 4.	Push to the branch: `git push origin my-new-feature`
 5.	Submit a pull request
 
-License
--------
+# License
 
 [MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha
 
-Credit
-------
+# Credit
 
 The React.js snippets were originally created by [orktes](https://atom.io/users/orktes) in [Atom React](https://atom.io/packages/react) in ES5 syntax.
