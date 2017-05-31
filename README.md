@@ -8,12 +8,13 @@ Made with :heart: by [Mentally Friendly](http://mentallyfriendly.com)
 
 ## Table of Contents
 1. [Install](#install)
-1. [Features](#features)
-1. [Snippets](#snippets)
-1. [Development](#import)
-2. [Contributing](#component-lifecycle)
-3. [License](#component-api)
-4. [Credit](#class-properties)
+2. [Features](#features)
+3. [React Snippets](#react-snippets)
+4. [React Router Snippets](#react-router-snippets)
+5. [Development](#import)
+6. [Contributing](#component-lifecycle)
+7. [License](#component-api)
+8. [Credit](#class-properties)
 
 ## Install
 
@@ -26,9 +27,9 @@ Made with :heart: by [Mentally Friendly](http://mentallyfriendly.com)
 -	React Snippets
 -	React Router Snippets - (These are currently outdated and will be updated shortly)
 
-## Snippets
+## React Snippets
 
-### Table of Snippets
+### Table of React Snippets
 1. [Import](#import)
 2. [Component Lifecycle](#component-lifecycle)
 3. [Component API](#component-api)
@@ -36,7 +37,7 @@ Made with :heart: by [Mentally Friendly](http://mentallyfriendly.com)
 5. [PropTypes](#proptypes)
 6. [ContextTypes](#contexttypes)
 7. [Skeletons](#skeletons)
-7. [this](#this)
+8. [this](#this)
 
 
 ### Import
@@ -423,6 +424,56 @@ this.props.${1}
 this.state.${1}
 ```
 
+## React Router Snippets
+
+### Table of React Router Snippets
+1. [Import (React Router)](#import-rr)
+
+### Import (RR)
+**React Router: import react-router-dom**: `_irr`
+```javascript
+import { ${1} } from 'react-router-dom'
+```
+
+**React Router: import Link**: `_il`
+```javascript
+import { Link } from 'react-router-dom'
+```
+
+**React Router: import Navlink**: `_inl`
+```javascript
+import { NavLink } from 'react-router-dom'
+```
+
+**React Router: import BrowserRouter**: `_ibr`
+```javascript
+import { BrowserRouter } from 'react-router-dom'
+```
+
+**React Router: import HashRouter**: `_ihr`
+```javascript
+import { HashRouter } from 'react-router-dom'
+```
+
+**React Router: import MemoryRouter**: `_imr`
+```javascript
+import { MemoryRouter } from 'react-router'
+```
+
+**React Router: import Switch, Route**: `_isr`
+```javascript
+import { Switch, Route } from 'react-router'
+```
+
+**React Router: import matchPath**: `_imp`
+```javascript
+import { matchPath } from 'react-router'
+```
+
+**React Router: import withRouter**: `_iwr`
+```javascript
+import { withRouter } from 'react-router'
+```
 
 ## Development
 

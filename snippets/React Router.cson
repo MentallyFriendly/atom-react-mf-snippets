@@ -1,4 +1,45 @@
-'.source.js':
+".source.js":
+  #
+  # Import snippets
+  # =================
+  "React Router: import react-router-dom":
+    prefix: "_irr"
+    body: "import { ${1} } from 'react-router-dom'"
+
+  "React Router: import Link":
+    prefix: "_il"
+    body: "import { Link } from 'react-router-dom'"
+
+  "React Router: import Navlink":
+    prefix: "_inl"
+    body: "import { NavLink } from 'react-router-dom'"
+
+  "React Router: import BrowserRouter":
+    prefix: "_ibr"
+    body: "import { BrowserRouter } from 'react-router-dom'"
+
+  "React Router: import HashRouter":
+    prefix: "_ihr"
+    body: "import { HashRouter } from 'react-router-dom'"
+
+  "React Router: import MemoryRouter":
+    prefix: "_imr"
+    body: "import { MemoryRouter } from 'react-router'"
+
+  "React Router: import Switch, Route":
+    prefix: "_isr"
+    body: "import { Switch, Route } from 'react-router'"
+
+  "React Router: import matchPath":
+    prefix: "_imp"
+    body: "import { matchPath } from 'react-router'"
+
+  "React Router: import withRouter":
+    prefix: "_iwr"
+    body: "import { withRouter } from 'react-router'"
+
+  # ==================
+
   'Router: router skeleton':
     'prefix': '_rr'
     'body': """
