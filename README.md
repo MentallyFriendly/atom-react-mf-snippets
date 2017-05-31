@@ -4,6 +4,8 @@ An [Atom](https://atom.io/) snippet library for React. Using ES6 syntax and prom
 
 Made with :heart: by [Mentally Friendly](http://mentallyfriendly.com)
 
+> Incompatibility Warning: Due to the prefix formatting this package is incompatible with the [react-snippets](https://atom.io/packages/react-snippets) package. This library is a fork of that library which was originally created by [webbushka](https://github.com/webbushka)
+
 ## Table of Contents
 1. [Install](#install)
 1. [Features](#features)
