@@ -2,25 +2,25 @@
 
 * An [Atom](https://atom.io/) snippet library for React. Using ES6 syntax and promoting best practices for React development.
 
-## Install
-
-Go to `Packages > Settings View > Install Packages/Themes` and search for **atom-react-mf-snippets**
-
-Click Install
-
-Restart Atom
-
-## Features
-
--	React Snippets
--	React Router Snippets - (These are currently outdated and will be updated shortly)
-
 ## Table of Contents
+1. [Install](#install)
+1. [Features](#features)
 1. [Snippets](#snippets)
 1. [Development](#import)
 2. [Contributing](#component-lifecycle)
 3. [License](#component-api)
 4. [Credit](#class-properties)
+
+## Install
+
+1. Go to `Packages > Settings View > Install Packages/Themes` and search for **atom-react-mf-snippets**
+2. Click Install
+3. Restart Atom
+
+## Features
+
+-	React Snippets
+-	React Router Snippets - (These are currently outdated and will be updated shortly)
 
 ## Snippets
 
@@ -61,9 +61,9 @@ import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
 ```
 
-### Component Lifecycle
+## Component Lifecycle
 
-#### Mounting
+### Mounting
 **React: constructor(props)**: `_cns`
 ```javascript
 constructor(props) {
@@ -97,7 +97,7 @@ componentDidMount() {
 }${2}
 ```
 
-#### Updating
+### Updating
 **React: componentWillReceiveProps(np) { ... }**: `_cwr`
 ```javascript
 componentWillReceiveProps(nextProps) {
@@ -126,7 +126,7 @@ componentDidUpdate(prevProps, prevState) {
 }${2}
 ```
 
-#### Unmounting
+### Unmounting
 **React: componentWillUnmount() { ... }**: `_cwun`
 ```javascript
 componentWillUnmount() {
@@ -134,7 +134,7 @@ componentWillUnmount() {
 }${2}
 ```
 
-### Component API
+## Component API
 **React: forceUpdate(...)**: `_fup`
 ```javascript
 forceUpdate(${1:callback})
@@ -147,7 +147,7 @@ this.setState({
 })
 ```
 
-### Class Properties
+## Class Properties
 **React: static defaultProps = { ... }**: `_scdp`
 ```javascript
 static defaultProps = {
@@ -162,7 +162,7 @@ ${1}.defaultProps = {
 }
 ```
 
-### PropTypes
+## PropTypes
 **React: Class.propTypes = { ... }**: `_cpt`
 ```javascript
 ${1}.propTypes = {
@@ -177,7 +177,7 @@ ${1}.propTypes = {
 }
 ```
 
-#### static propTypes
+### static propTypes
 **React: static propTypes = { ... }**: `_scpt`
 ```javascript
 static propTypes = {
@@ -192,7 +192,7 @@ static propTypes = {
 }
 ```
 
-#### propType blank
+### propType blank
 **React: propType blank**: `_pt`
 ```javascript
 ${1}: PropTypes.${2:string}
@@ -203,7 +203,7 @@ ${1}: PropTypes.${2:string}
 ${1}: PropTypes.${2:string}.isRequired${3}
 ```
 
-#### propType string
+### propType string
 **React: propTypes string**: `_pts`
 ```javascript
 ${1}: PropTypes.string${2}
@@ -214,7 +214,7 @@ ${1}: PropTypes.string${2}
 ${1}: PropTypes.string.isRequired${2}
 ```
 
-#### propType number
+### propType number
 **React: propTypes number**: `_ptn`
 ```javascript
 ${1}: PropTypes.number${2}
@@ -225,7 +225,7 @@ ${1}: PropTypes.number${2}
 ${1}: PropTypes.number.isRequired${2}
 ```
 
-#### propType object
+### propType object
 **React: propTypes object**: `_pto`
 ```javascript
 ${1}: PropTypes.object${2}
@@ -236,7 +236,7 @@ ${1}: PropTypes.object${2}
 ${1}: PropTypes.object.isRequired${2}
 ```
 
-#### propType array
+### propType array
 **React: propTypes array**: `_pta`
 ```javascript
 ${1}: PropTypes.array${2}
@@ -247,7 +247,7 @@ ${1}: PropTypes.array${2}
 ${1}: PropTypes.array.isRequired${2}
 ```
 
-#### propType bool
+### propType bool
 **React: propTypes bool**: `_ptb`
 ```javascript
 ${1}: PropTypes.bool${2}
@@ -258,7 +258,7 @@ ${1}: PropTypes.bool${2}
 ${1}: PropTypes.bool.isRequired${2}
 ```
 
-#### propType element
+### propType element
 **React: propTypes element**: `_pte`
 ```javascript
 ${1}: PropTypes.element${2}
@@ -269,7 +269,7 @@ ${1}: PropTypes.element${2}
 ${1}: PropTypes.element.isRequired${2}
 ```
 
-#### propType function
+### propType function
 **React: propTypes function**: `_ptf`
 ```javascript
 ${1}: PropTypes.func${2}
@@ -280,7 +280,7 @@ ${1}: PropTypes.func${2}
 ${1}: PropTypes.func.isRequired${2}
 ```
 
-#### propType symbol
+### propType symbol
 **React: propTypes symbol**: `_ptsym`
 ```javascript
 ${1}: PropTypes.symbol${2}
@@ -291,7 +291,7 @@ ${1}: PropTypes.symbol${2}
 ${1}: PropTypes.symbol.isRequired${2}
 ```
 
-#### propType node
+### propType node
 **React: propTypes node**: `_ptnode`
 ```javascript
 ${1}: PropTypes.node${2}
@@ -302,7 +302,7 @@ ${1}: PropTypes.node${2}
 ${1}: PropTypes.node.isRequired${2}
 ```
 
-### ContextTypes
+## ContextTypes
 **React: Class.contextTypes = { ... }**: `_cct`
 ```javascript
 ${1}.contextTypes = {
@@ -317,7 +317,7 @@ static contextTypes = {
 }
 ```
 
-### Skeletons
+## Skeletons
 **React: Stateless Function**: `_rf`
 ```javascript
 const ${1} = ({ ${2} }) => (
@@ -408,7 +408,7 @@ ${1}.propTypes = propTypes
 export default ${1}
 ```
 
-### this
+## this
 **React: this.props.**: `_props`
 ```javascript
 this.props.${1}
