@@ -187,30 +187,29 @@
   #
   # Skeleton snippets
   # ==============================
-
-  "React: class skeleton":
-    prefix: "_cer"
-    body: "import React, { Component } from 'react'\n\nclass ${1} extends Component {\n\n\trender() {\n\t\treturn (\n\t\t\t${2:<div></div>}\n\t\t)\n\t}\n\n}\n\nexport default ${1}"
-
-  "React: Stateless Component":
-    prefix: "_rsc"
-    body: "import React from 'react'\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n)\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n}\n\nexport default ${1}"
-
-  "React: Stateless Component return":
-    prefix: "_rscr"
-    body: "import React from 'react'\n\nconst ${1} = ({${2}}) => {\n\treturn (\n\t\t<div>${4}</div>\n\t)\n}\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n}\n\nexport default ${1}"
-
-  "React: Stateless Component PropTypes":
-    prefix: "_rscp"
-    body: "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst ${1} = ({ ${2} }) => (\n\t<div>${4}</div>\n)\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n}\n\nexport default ${1}"
-
   "React: Stateless Function":
-    prefix: "_rsf"
-    body: "const ${1} = ({${2}}) => (\n\t<div>{${2}}</div>\n)"
+    prefix: "_rf"
+    body: "const ${1} = ({ ${2} }) => (\n\treturn (\n\t\t<div>${3}</div>\n\t)\n)"
 
-  "React: class":
-    prefix: "_clss"
-    body: "class ${1} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t${2}\n\t\t\t</div>\n\t\t)\n\t}\n}"
+  "React: Class":
+    prefix: "_rc"
+    body: "class ${1} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>${2}</div>\n\t\t)\n\t}\n}"
+
+  "React: Skeleton Stateless Function":
+    prefix: "_srf"
+    body: "import React from 'react'\n\nconst ${1} = ({ ${2} }) => (\n\treturn (\n\t\t<div>${3}</div>\n\t)\n)\n\nexport default ${1}"
+
+  "React: Skeleton Class":
+    prefix: "_src"
+    body: "import React from 'react'\n\nclass ${1} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>${2}</div>\n\t\t)\n\t}\n}\n\nexport default ${1}"
+
+  "React: Skeleton Stateless Function w/PropTypes":
+    prefix: "_srfp"
+    body: "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst propTypes = {\n\n}\n\nconst ${1} = ({ ${2} }) => (\n\treturn (\n\t\t<div>${3}</div>\n\t)\n)\n\n${1}.propTypes = propTypes\n\nexport default ${1}"
+
+  "React: Skeleton Class w/PropTypes":
+    prefix: "_srcp"
+    body: "import React from 'react'\nimport PropTypes from 'prop-types'\n\nconst propTypes = {\n\n}\n\nclass ${1} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>${2}</div>\n\t\t)\n\t}\n}\n\n${1}.propTypes = propTypes\n\nexport default ${1}"
 
   #
   # this snippets
