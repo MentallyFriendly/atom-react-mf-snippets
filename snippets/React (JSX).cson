@@ -173,6 +173,22 @@
     prefix: "_ptfr"
     body: "${1}: PropTypes.func.isRequired${2}"
 
+  # PropType symbol
+  "React: propTypes symbol":
+    prefix: "_ptsym"
+    body: "${1}: PropTypes.symbol${2}"
+  "React: propTypes symbol required":
+    prefix: "_ptsymr"
+    body: "${1}: PropTypes.symbol.isRequired${2}"
+
+  # PropType node
+  "React: propTypes node":
+    prefix: "_ptnode"
+    body: "${1}: PropTypes.node${2}"
+  "React: propTypes node required":
+    prefix: "_ptnoder"
+    body: "${1}: PropTypes.node.isRequired${2}"
+
   #
   # ContextTypes snippets
   # ==============================
