@@ -1,4 +1,7 @@
 ".source.js":
+  #
+  # Import snippets
+  # =================
   "React: import empty()":
     prefix: "_i"
     body: "import ${1} from '${2}'"
@@ -19,18 +22,28 @@
     prefix: "_ird"
     body: "import ReactDOM from 'react-dom'"
 
-  "React: componentDidMount() { ... }":
-    prefix: "_cdm"
-    body: "componentDidMount() {\n\t${1}\n}${2}"
+  #
+  # Component Lifecycle snippets
+  # ==============================
 
-  "React: componentDidUpdate(pp, ps) { ... }":
-    prefix: "_cdup"
-    body: "componentDidUpdate(prevProps, prevState) {\n\t${1}\n}${2}"
+  # Mounting
+  "React: constructor(props)":
+    prefix: "_cns"
+    body: "constructor(props) {\n\tsuper(props)\n\tthis.state = {\n\t\t${1}: props.${2}\n\t}\n}${3}"
 
   "React: componentWillMount() { ... }":
     prefix: "_cwm"
     body: "componentWillMount() {\n\t${1}\n}${2}"
 
+  "React: render() { return ... }":
+    prefix: "_ren"
+    body: "render() {\n\treturn (\n\t\t${1:<div></div>}\n\t)\n}"
+
+  "React: componentDidMount() { ... }":
+    prefix: "_cdm"
+    body: "componentDidMount() {\n\t${1}\n}${2}"
+
+  # Updating
   "React: componentWillReceiveProps(np) { ... }":
     prefix: "_cwr"
     body: "componentWillReceiveProps(nextProps) {\n\t${1}\n}${2}"
@@ -39,49 +52,141 @@
     prefix: "_scu"
     body: "shouldComponentUpdate(nextProps, nextState) {\n\t${1}\n}${2}"
 
-  "React: componentWillUnmount() { ... }":
-    prefix: "_cwun"
-    body: "componentWillUnmount() {\n\t${1}\n}${2}"
-
   "React: componentWillUpdate(np, ns) { ... }":
     prefix: "_cwu"
     body: "componentWillUpdate(nextProps, nextState) {\n\t${1}\n}${2}"
 
+  "React: componentDidUpdate(pp, ps) { ... }":
+    prefix: "_cdup"
+    body: "componentDidUpdate(prevProps, prevState) {\n\t${1}\n}${2}"
+
+  # Unmounting
+  "React: componentWillUnmount() { ... }":
+    prefix: "_cwun"
+    body: "componentWillUnmount() {\n\t${1}\n}${2}"
+
+  #
+  # Other Component API snippets
+  # ========================
   "React: forceUpdate(...)":
     prefix: "_fup"
     body: "forceUpdate(${1:callback})"
 
-  "React: Class.contextTypes = { ... }":
-    prefix: "_cct"
-    body: "${1}.contextTypes = {\n\t${2}: PropTypes.${3:string}\n}"
+  "React: setState({ ... })":
+    prefix: "_sst"
+    body: "this.setState({\n\t${1}: ${2}\n})"
 
-  "React: Class.propTypes = { ... }":
-    prefix: "_cpt"
-    body: "${1}.propTypes = {\n\t${2}: PropTypes.${3:string}\n}"
+  #
+  # Class Property snippets
+  # ==============================
+  "React: static defaultProps = { ... }":
+    prefix: "_scdp"
+    body: "static defaultProps = {\n\t${1}: ${2}\n}"
 
   "React: Class.defaultProps = { ... }":
     prefix: "_cdp"
     body: "${1}.defaultProps = {\n\t${2}: ${3}\n}"
 
-  "React: static contextTypes = { ... }":
-    prefix: "_scct"
-    body: "static contextTypes = {\n\t${1}: PropTypes.${2:string}\n}"
+  # need displayName snippet
 
+  #
+  # PropType snippets
+  # ==============================
+  "React: Class.propTypes = { ... }":
+    prefix: "_cpt"
+    body: "${1}.propTypes = {\n\t${2}: PropTypes.${3:string}\n}"
+
+  "React: Class.propTypes = { ... } required":
+    prefix: "_cptr"
+    body: "${1}.propTypes = {\n\t${2}: PropTypes.${3:string}.isRequired${4}\n}"
+
+  # static Proptypes
   "React: static propTypes = { ... }":
     prefix: "_scpt"
     body: "static propTypes = {\n\t${1}: PropTypes.${2:string}\n}"
 
-  "React: static defaultProps = { ... }":
-    prefix: "_scdp"
-    body: "static defaultProps = {\n\t${1}: ${2}\n}"
+  "React: static propTypes = { ... } required":
+    prefix: "_scptr"
+    body: "static propTypes = {\n\t${1}: PropTypes.${2:string}.isRequired${3}\n}"
 
-  "React: propTypes { ... }":
+  # PropType blank
+  "React: propType blank":
     prefix: "_pt"
-    body: "propTypes: {\n\t${1}: PropTypes.${2:string}\n},"
+    body: "${1}: PropTypes.${2:string}"
+  "React: propType blank Required":
+    prefix: "_ptr"
+    body: "${1}: PropTypes.${2:string}.isRequired${3}"
 
-  "React: PropTypes.":
-      prefix: "_rpt"
-      body: "PropTypes."
+  # PropType string
+  "React: propTypes string":
+    prefix: "_pts"
+    body: "${1}: PropTypes.string${2}"
+  "React: propTypes string Required":
+    prefix: "_ptsr"
+    body: "${1}: PropTypes.string.isRequired${2}"
+
+  # PropType number
+  "React: propTypes number":
+    prefix: "_ptn"
+    body: "${1}: PropTypes.number${2}"
+  "React: propTypes number required":
+    prefix: "_ptnr"
+    body: "${1}: PropTypes.number.isRequired${2}"
+
+  # PropType object
+  "React: propTypes object":
+    prefix: "_pto"
+    body: "${1}: PropTypes.object${2}"
+  "React: propTypes object required":
+    prefix: "_ptor"
+    body: "${1}: PropTypes.object.isRequired${2}"
+
+  # PropType array
+  "React: propTypes array":
+    prefix: "_pta"
+    body: "${1}: PropTypes.array${2}"
+  "React: propTypes array required":
+    prefix: "_ptar"
+    body: "${1}: PropTypes.array.isRequired${2}"
+
+  # PropType bool
+  "React: propTypes bool":
+    prefix: "_ptb"
+    body: "${1}: PropTypes.bool${2}"
+  "React: propTypes bool required":
+    prefix: "_ptbr"
+    body: "${1}: PropTypes.bool.isRequired${2}"
+
+  # PropType element
+  "React: propTypes element":
+    prefix: "_pte"
+    body: "${1}: PropTypes.element${2}"
+  "React: propTypes element required":
+    prefix: "_pter"
+    body: "${1}: PropTypes.element.isRequired${2}"
+
+  # PropType function
+  "React: propTypes function":
+    prefix: "_ptf"
+    body: "${1}: PropTypes.func${2}"
+  "React: propTypes function required":
+    prefix: "_ptfr"
+    body: "${1}: PropTypes.func.isRequired${2}"
+
+  #
+  # ContextTypes snippets
+  # ==============================
+  "React: Class.contextTypes = { ... }":
+    prefix: "_cct"
+    body: "${1}.contextTypes = {\n\t${2}: PropTypes.${3:string}\n}"
+
+  "React: static contextTypes = { ... }":
+    prefix: "_scct"
+    body: "static contextTypes = {\n\t${1}: PropTypes.${2:string}\n}"
+
+  #
+  # Skeleton snippets
+  # ==============================
 
   "React: class skeleton":
     prefix: "_cer"
@@ -91,7 +196,7 @@
     prefix: "_rsc"
     body: "import React from 'react'\n\nconst ${1} = ({${2}}) => (\n\t<div>${4}</div>\n)\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n}\n\nexport default ${1}"
 
-  "React: Stateless Component Return":
+  "React: Stateless Component return":
     prefix: "_rscr"
     body: "import React from 'react'\n\nconst ${1} = ({${2}}) => {\n\treturn (\n\t\t<div>${4}</div>\n\t)\n}\n\n${1}.propTypes = {\n\t${2}: PropTypes.${3}\n}\n\nexport default ${1}"
 
@@ -103,14 +208,13 @@
     prefix: "_rsf"
     body: "const ${1} = ({${2}}) => (\n\t<div>{${2}}</div>\n)"
 
-  "React: render() { return ... }":
-    prefix: "_ren"
-    body: "render() {\n\treturn (\n\t\t${1:<div></div>}\n\t)\n}"
+  "React: class":
+    prefix: "_clss"
+    body: "class ${1} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t${2}\n\t\t\t</div>\n\t\t)\n\t}\n}"
 
-  "React: setState({ ... })":
-    prefix: "_sst"
-    body: "this.setState({\n\t${1}: ${2}\n})"
-
+  #
+  # this snippets
+  # ==============================
   "React: this.props.":
     prefix: "_props"
     body: "this.props.${1}"
@@ -118,11 +222,3 @@
   "React: this.state.":
     prefix: "_state"
     body: "this.state.${1}"
-
-  "React: constructor(props)":
-    prefix: "_cns"
-    body: "constructor(props) {\n\tsuper(props)\n\tthis.state = {\n\t\t${1}: props.${2}\n\t}\n}${3}"
-
-  "React: class Foo extends Bar":
-    prefix: "_clss"
-    body: "class ${1} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t${2}\n\t\t\t</div>\n\t\t)\n\t}\n}"
