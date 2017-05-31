@@ -1,6 +1,8 @@
-# Mentally Friendly React.js Snippets for Atom
+# MF React.js Snippets for Atom
 
-* An [Atom](https://atom.io/) snippet library for React. Using ES6 syntax and promoting best practices for React development.
+An [Atom](https://atom.io/) snippet library for React. Using ES6 syntax and promoting best practices for React development.
+
+Made with :heart: by [Mentally Friendly](http://mentallyfriendly.com)
 
 ## Table of Contents
 1. [Install](#install)
@@ -432,11 +434,13 @@ $ apm link
 
 ## Contributing
 
-1.	Fork it!
-2.	Create your feature branch: `git checkout -b my-new-feature`
-3.	Commit your changes: `git commit -m 'Add some feature'`
-4.	Push to the branch: `git push origin my-new-feature`
-5.	Submit a pull request
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Make changes
+4. Update ReadMe!
+5. Commit your changes: `git commit -m 'Add some feature'`
+6. Push to the branch: `git push origin my-new-feature`
+7. Submit a pull request
 
 ## License
 
@@ -444,4 +448,4 @@ $ apm link
 
 ## Credit
 
-The React.js snippets were originally created by [orktes](https://atom.io/users/orktes) in [Atom React](https://atom.io/packages/react) in ES5 syntax.
+A selection of these React.js snippets were originally curated by [orktes](https://atom.io/users/orktes) in [Atom React](https://atom.io/packages/react) in ES5 syntax.
