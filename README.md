@@ -357,7 +357,7 @@ export default ${1}
 
 **React: Skeleton Class**: `_src`
 ```javascript
-import React from 'react'
+import React, { Component } from 'react'
 
 class ${1} extends Component {
   render() {
