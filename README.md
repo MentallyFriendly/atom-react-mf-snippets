@@ -10,10 +10,10 @@ Made with :heart: by [Mentally Friendly](http://mentallyfriendly.com)
 1. [Install](#install)
 1. [Features](#features)
 1. [Snippets](#snippets)
-1. [Development](#import)
-2. [Contributing](#component-lifecycle)
-3. [License](#component-api)
-4. [Credit](#class-properties)
+1. [Development](#development)
+2. [Contributing](#contributing)
+3. [License](#license)
+4. [Credit](#credit)
 
 ## Install
 
