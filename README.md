@@ -8,12 +8,13 @@ Made with :heart: by [Mentally Friendly](http://mentallyfriendly.com)
 
 ## Table of Contents
 1. [Install](#install)
-1. [Features](#features)
-1. [Snippets](#snippets)
-1. [Development](#development)
-2. [Contributing](#contributing)
-3. [License](#license)
-4. [Credit](#credit)
+2. [Features](#features)
+3. [React Snippets](#react-snippets)
+4. [React Router Snippets](#react-router-snippets)
+5. [Development](#development)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Credit](#credit)
 
 ## Install
 
@@ -26,9 +27,9 @@ Made with :heart: by [Mentally Friendly](http://mentallyfriendly.com)
 -	React Snippets
 -	React Router Snippets - (These are currently outdated and will be updated shortly)
 
-## Snippets
+## React Snippets
 
-### Table of Snippets
+### Table of React Snippets
 1. [Import](#import)
 2. [Component Lifecycle](#component-lifecycle)
 3. [Component API](#component-api)
@@ -36,7 +37,7 @@ Made with :heart: by [Mentally Friendly](http://mentallyfriendly.com)
 5. [PropTypes](#proptypes)
 6. [ContextTypes](#contexttypes)
 7. [Skeletons](#skeletons)
-7. [this](#this)
+8. [this](#this)
 
 
 ### Import
@@ -423,6 +424,128 @@ this.props.${1}
 this.state.${1}
 ```
 
+## React Router Snippets
+
+### Table of React Router Snippets
+1. [Import (React Router)](#import-rr)
+2. [Link](#link)
+3. [NavLink](#navlink)
+4. [Prompt](#prompt)
+5. [Redirect](#redirect)
+6. [Route](#route)
+7. [Router](#router)
+
+### Import (RR)
+**Router: import react-router-dom**: `_irr`
+```javascript
+import { ${1} } from 'react-router-dom'
+```
+
+**Router: import Link**: `_il`
+```javascript
+import { Link } from 'react-router-dom'
+```
+
+**Router: import Navlink**: `_inl`
+```javascript
+import { NavLink } from 'react-router-dom'
+```
+
+**Router: import BrowserRouter**: `_ibr`
+```javascript
+import { BrowserRouter } from 'react-router-dom'
+```
+
+**Router: import HashRouter**: `_ihr`
+```javascript
+import { HashRouter } from 'react-router-dom'
+```
+
+**Router: import MemoryRouter**: `_imr`
+```javascript
+import { MemoryRouter } from 'react-router'
+```
+
+**Router: import Switch, Route**: `_isr`
+```javascript
+import { Switch, Route } from 'react-router'
+```
+
+**Router: import matchPath**: `_imp`
+```javascript
+import { matchPath } from 'react-router'
+```
+
+**Router: import withRouter**: `_iwr`
+```javascript
+import { withRouter } from 'react-router'
+```
+
+### Link
+**Router: Link**: `_ln`
+```javascript
+<Link to="${1}">${2}</Link>${3}
+```
+
+**Router: Link w/props**: `_lnp`
+```javascript
+<Link to={{\n\tpathname: "${1}",\n\tstate: { ${2}: ${3} }\n}}/>${4}
+```
+
+### NavLink
+**Router: NavLink**: `_nln`
+```javascript
+<NavLink to="${1}">${2}</NavLink>${3}
+```
+
+### Prompt
+**Router: Prompt**: `_prmpt`
+```javascript
+<Prompt message="${1}"/>${2}
+```
+
+### Redirect
+**Router: Redirect**: `_redirect`
+```javascript
+<Redirect to={${1}} />${2}
+```
+
+**Router: Redirect w/props**: `_redirectp`
+```javascript
+<Redirect to={{\n\tpathname: "${1}",\n\tstate: { ${2}: ${3} }\n}} />${4}
+```
+
+### Route
+**Router: Route**: `_rt`
+```javascript
+<Route ${1:exact }path="${2}" component={${3}} />${4}
+```
+
+**Router: Nested Route**: `_rtn`
+```javascript
+<Route path="${1}" component={${2}}>\n\t${3}</Route>${4}
+```
+
+**Router: Route w/render**: `_rtr`
+```javascript
+<Route ${1:exact }path="${2}" render={(${3}) => ${4}} />${5}
+```
+
+**Router: Route w/children**: `_rtc`
+```javascript
+<Route ${1:exact }path="${2}" children={({ ${3:match} }) => ${4}} />${5}
+```
+
+### Router
+**Router: Router**: `_router`
+```javascript
+<Router>${1}</Router>${2}
+```
+
+**Router: Router history**: `_routerh`
+```javascript
+<Router history={${1:history}}>${2}</Router>${3}
+```
 
 ## Development
 

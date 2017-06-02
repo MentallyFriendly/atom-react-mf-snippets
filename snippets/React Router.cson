@@ -1,87 +1,109 @@
-'.source.js':
-  'Router: router skeleton':
-    'prefix': '_rr'
-    'body': """
-      import React from 'react';
-      import ReactDOM from 'react-dom';
-      import Router from 'react-router';
-      let { Route, DefaultRoute, NotFoundRoute, browserHistory } = Router;
+".source.js":
+  #
+  # Import snippets
+  # =================
+  "Router: import react-router-dom":
+    prefix: "_irr"
+    body: "import { ${1} } from 'react-router-dom'"
 
-      // -- Import components
-      import ${1:App} from '${2}';
+  "Router: import Link":
+    prefix: "_il"
+    body: "import { Link } from 'react-router-dom'"
 
-      ReactDOM.render((
-        <Router history={browserHistory}>
-          <Route handler={${1:App}} path='/'>
-            ${3}
-          </Route>
-        </Router>
-      ), document.${3:getElementById('${4:app}')});
-    """
+  "Router: import Navlink":
+    prefix: "_inl"
+    body: "import { NavLink } from 'react-router-dom'"
 
-  'Router: <Route />':
-    'prefix': '_rt'
-    'body': "<Route path='${1}' component={${2}} />"
+  "Router: import Prompt":
+    prefix: "_ipr"
+    body: "import { Prompt } from 'react-router'"
 
-  'Router: Nested <Route></Route>':
-    'prefix': '_nrt'
-    'body': """
-      <Route path='${1}' component={${2}}>
-        ${5}
-      </Route>
-    """
+  "Router: import BrowserRouter":
+    prefix: "_ibr"
+    body: "import { BrowserRouter } from 'react-router-dom'"
 
-  'Router: <Redirect />':
-    'prefix': '_rrt'
-    'body': '<Redirect from=\'${1}\' to=\'${2}\' />'
+  "Router: import HashRouter":
+    prefix: "_ihr"
+    body: "import { HashRouter } from 'react-router-dom'"
 
-  'Router: <NotFoundRoute />':
-    'prefix': '_nfrt'
-    'body': '<NotFoundRoute component={${1}}/>'
+  "Router: import MemoryRouter":
+    prefix: "_imr"
+    body: "import { MemoryRouter } from 'react-router'"
 
-  'Router: <DefaultRoute />':
-    'prefix': '_drt'
-    'body': '<DefaultRoute component={${1}} />'
+  "Router: import Switch, Route":
+    prefix: "_isr"
+    body: "import { Switch, Route } from 'react-router'"
 
-  'Router: <Link />':
-    'prefix': '_ln'
-    'body': '<Link to={pathname: \'${1}\'${3:, query: \\{${4}\\}}${5:, hash: \'${6}\'}${7:, state: \\{${8}\\}}}>${9}</Link>'
+  "Router: import matchPath":
+    prefix: "_imp"
+    body: "import { matchPath } from 'react-router'"
 
-  'Router: onEnter={}':
-    'prefix': '_one'
-    'body': 'onEnter={${1}}'
+  "Router: import withRouter":
+    prefix: "_iwr"
+    body: "import { withRouter } from 'react-router'"
 
-  'Router: onLeave={}':
-    'prefix': '_onl'
-    'body': 'onLeave={${1}}'
+  #
+  # Link snippets
+  # =================
+  "Router: Link":
+    prefix: "_ln"
+    body: '<Link to="${1}">${2}</Link>${3}'
 
-  'Router: setRouteLeaveHook':
-    'prefix': '_slh'
-    'body': """
-      this.props.router.setRouteLeaveHook(
-        this.props.route,
-        this.routerWillLeave
-      )
-    """
+  "Router: Link w/props":
+    prefix: "_lnp"
+    body: '<Link to={{\n\tpathname: "${1}",\n\tstate: { ${2}: ${3} }\n}}/>${4}'
 
-  'Router: routerWillLeave()':
-    'prefix': '_rwl'
-    'body': """
-      routerWillLeave() {
-        if (${1}) {
-          return '${2:You have unsaved information, are you sure you want to leave?}';
-        }
-      }
-    """
+  #
+  # NavLink snippets
+  # =================
+  "Router: NavLink":
+    prefix: "_nln"
+    body: '<NavLink to="${1}">${2}</NavLink>${3}'
 
-  'Router: transition.abort()':
-    'prefix': '_ta'
-    'body': 'transition.abort();'
+  #
+  # Prompt snippets
+  # =================
+  "Router: Prompt":
+    prefix: "_prmpt"
+    body: '<Prompt message="${1}"/>${2}'
 
-  'Router: transition.retry()':
-    'prefix': '_tr'
-    'body': 'transition.retry();'
+  #
+  # Redirect snippets
+  # =================
+  "Router: Redirect":
+    prefix: "_redirect"
+    body: '<Redirect to={${1}} />${2}'
 
-  'Router: transition.redirect()':
-    'prefix': '_trd'
-    'body': 'transition.redirect(${1:to}, ${2:params}, ${3:query});'
+  "Router: Redirect w/props":
+    prefix: "_redirectp"
+    body: '<Redirect to={{\n\tpathname: "${1}",\n\tstate: { ${2}: ${3} }\n}} />${4}'
+
+  #
+  # Route snippets
+  # =================
+  "Router: Route":
+    prefix: "_rt"
+    body: '<Route ${1:exact }path="${2}" component={${3}} />${4}'
+
+  "Router: Nested Route":
+    prefix: "_rtn"
+    body: '<Route path="${1}" component={${2}}>\n\t${3}</Route>${4}'
+
+  "Router: Route w/render":
+    prefix: "_rtr"
+    body: '<Route ${1:exact }path="${2}" render={(${3}) => ${4}} />${5}'
+
+  "Router: Route w/children":
+    prefix: "_rtc"
+    body: '<Route ${1:exact }path="${2}" children={({ ${3:match} }) => ${4}} />${5}'
+
+  #
+  # Router snippets
+  # =================
+  "Router: Router":
+    prefix: "_router"
+    body: '<Router>${1}</Router>${2}'
+
+  "Router: Router history":
+    prefix: "_routerh"
+    body: '<Router history={${1:history}}>${2}</Router>${3}'
