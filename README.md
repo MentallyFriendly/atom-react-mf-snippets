@@ -11,10 +11,10 @@ Made with :heart: by [Mentally Friendly](http://mentallyfriendly.com)
 2. [Features](#features)
 3. [React Snippets](#react-snippets)
 4. [React Router Snippets](#react-router-snippets)
-5. [Development](#import)
-6. [Contributing](#component-lifecycle)
-7. [License](#component-api)
-8. [Credit](#class-properties)
+5. [Development](#development)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Credit](#credit)
 
 ## Install
 
@@ -358,7 +358,7 @@ export default ${1}
 
 **React: Skeleton Class**: `_src`
 ```javascript
-import React from 'react'
+import React, { Component } from 'react'
 
 class ${1} extends Component {
   render() {
