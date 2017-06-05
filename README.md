@@ -1,10 +1,10 @@
-# MF React.js Snippets for Atom
+# MF React & React Router Snippets for Atom
 
-An [Atom](https://atom.io/) snippet library for React. Using ES6 syntax and promoting best practices for React development.
+An [Atom](https://atom.io/) snippet library for React and React Router. Using ES6 syntax and promoting best practices for React development.
 
 Made with :heart: by [Mentally Friendly](http://mentallyfriendly.com)
 
-> Incompatibility Warning: Due to the prefix formatting this package is incompatible with the [react-snippets](https://atom.io/packages/react-snippets) package. This library is a fork of that library which was originally created by [webbushka](https://github.com/webbushka)
+> Incompatibility Warning: Due to the prefix formatting of snippets this package is incompatible with the [react-snippets](https://atom.io/packages/react-snippets) package. This library started life as a fork of that library which was originally created by [webbushka](https://github.com/webbushka)
 
 ## Table of Contents
 1. [Install](#install)
@@ -25,7 +25,7 @@ Made with :heart: by [Mentally Friendly](http://mentallyfriendly.com)
 ## Features
 
 -	React Snippets
--	React Router Snippets - (These are currently outdated and will be updated shortly)
+-	React Router 4 Snippets
 
 ## React Snippets
 
