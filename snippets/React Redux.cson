@@ -1,0 +1,39 @@
+".source.js":
+  #
+  # Import snippets
+  # =================
+  "Redux: reducer switch":
+    prefix: '_rdr'
+    body: "export default function ${1}(state = initialState, action) {\n\tswitch (action.type) {\n\t\tcase ${2}:\n\t\t\treturn {\n\t\t\t\t...state,\n\t\t\t}\n\t\tdefault:\n\t\t\treturn state\n\t}\n}"
+
+  "Redux: action creator":
+    prefix: "_rdac"
+    body: "function ${1}() {\n\treturn {\n\t\ttype: ${2},\n\t}\n}\n"
+
+  "Redux: import connect, bindActionCreators and redux module":
+    prefix: "_rdicbm"
+    body: "import { connect } from 'react-redux'\nimport { bindActionCreators } from 'redux'\nimport ${1} from 'redux/modules/${2}'"
+
+  "Redux: import connect":
+    prefix: "_rdic"
+    body: "import { connect } from 'react-redux'"
+
+  "Redux: import redux module":
+    prefix: "_rdim"
+    body: "import ${1} from 'redux/modules/${2}'"
+
+  "Redux: import bindActionCreators":
+    prefix: "_rdib"
+    body: "import { bindActionCreators } from 'redux'"
+
+  "Redux: export default connect(p,d) { ... }":
+    prefix: "_rdep"
+    body: "export default connect(\n\tmapStateToProps,\n\tmapDispatchToProps\n)(${1})"
+
+  "Redux: mapStateToProps: fn(state) { ... }":
+    prefix: "_rdms"
+    body: "function mapStateToProps(state) {\n\treturn {\n\t\t${1}\n\t}\n}"
+
+  "Redux: mapDispatchToProps: fn(dispatch) { ... }":
+    prefix: "_rdmd"
+    body: "function mapDispatchToProps(dispatch) {\n\treturn bindActionCreators(${1}, dispatch)\n}"
