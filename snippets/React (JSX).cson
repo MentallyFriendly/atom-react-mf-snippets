@@ -213,7 +213,7 @@
 
   "React: Skeleton Stateless Function":
     prefix: "_srf"
-    body: "import React from 'react'\n\nconst ${1} = ({ ${2} }) => (\n\treturn (\n\t\t<div>${3}</div>\n\t)\n)\n\nexport default ${1}"
+    body: "import React from 'react'\n\nconst ${1} = ({ ${2} }) => (\n\t<div>${3}</div>\n)\n\nexport default ${1}"
 
   "React: Skeleton Class":
     prefix: "_src"
