@@ -325,11 +325,11 @@ static contextTypes = {
 ## Skeletons
 **React: Stateless Function**: `_rf`
 ```javascript
-const ${1} = ({ ${2} }) => (
+const ${1} = ({ ${2} }) => {
   return (
     <div>${3}</div>
   )
-)
+}
 ```
 
 **React: Class**: `_rc`
@@ -347,11 +347,11 @@ class ${1} extends Component {
 ```javascript
 import React from 'react'
 
-const ${1} = ({ ${2} }) => (
+const ${1} = ({ ${2} }) => {
   return (
     <div>${3}</div>
   )
-)
+}
 
 export default ${1}
 ```
@@ -380,11 +380,11 @@ const propTypes = {
 
 }
 
-const ${1} = ({ ${2} }) => (
+const ${1} = ({ ${2} }) => {
   return (
     <div>${3}</div>
   )
-)
+}
 
 ${1}.propTypes = propTypes
 
